@@ -14,12 +14,12 @@ export default function Navbar() {
   return (
     <nav className='nav' >
 
-      <h2 className='Nav-Blog'>Blog Posts</h2>
-      <Link className='Nav-home' to="/">Home</Link>
+
+      <Link className='Nav-home' to="/"><img className='home-img' src="/images/Vector.png" alt="" />Blog Posts</Link>
 
       {token ? (
         <>
-          <Link className='Nav-create' to="/create">Create Post</Link>
+          <Link className='Nav-create' to="/create">+  Create new</Link>
           <button className='Nav-Logout' onClick={handleLogout}>Logout</button>
         </>
       ) : (

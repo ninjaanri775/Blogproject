@@ -38,9 +38,6 @@ export default function PostDetails() {
   const postAuthorId = post.author?._id || post.author?.id;
   const isAuthor = userId && postAuthorId && userId.toString() === postAuthorId.toString();
 
-  console.log('User ID:', userId);
-  console.log('Post Author ID:', postAuthorId);
-  console.log('Is Author?', isAuthor);
 
   const handleDelete = async () => {
     if (!window.confirm('Are you sure you want to delete this post?')) return;
@@ -56,7 +53,7 @@ export default function PostDetails() {
   };
 
 return (
-  <div className="post-details-container">
+  <div className="post-details-container big">
     <h1 className="post-title">{post.title}</h1>
     <p className="post-author">By: {post.author?.name || 'Unknown'}</p>
 

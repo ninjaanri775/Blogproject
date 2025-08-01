@@ -38,7 +38,7 @@ export default function CreatePost() {
   };
 
 return (
-  <div className="create-post-container">
+  <div className="create-post-container big">
     <h1 className="create-post-title">Create New Post</h1>
     {error && <p className="error-message">{error}</p>}
 

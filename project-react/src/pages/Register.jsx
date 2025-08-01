@@ -24,7 +24,7 @@ export default function Register() {
   };
 
    return (
-    <div className="auth-container">
+    <div className="auth-container big">
       <h1 className="auth-title">Register</h1>
       {error && <p className="error-message">{error}</p>}
 

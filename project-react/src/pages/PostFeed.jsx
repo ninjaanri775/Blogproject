@@ -59,7 +59,7 @@ export default function PostFeed() {
 
 
   return (
-    <div style={{ maxWidth: '700px', margin: 'auto' }}>
+    <div className='home-container big' style={{ maxWidth: '700px', margin: 'auto' }}>
       <div className='search-div' style={{ display: 'flex', gap: '0.5rem', marginBottom: '1rem' }}>
         <input className='search-input'
           type="text"

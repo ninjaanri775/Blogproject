@@ -60,14 +60,14 @@ export default function EditPost() {
   if (loading) return <p>Loading...</p>;
 
 return (
-  <div className="create-post-container">  {/* or edit-post-container */}
-    <h1 className="create-post-title">Create New Post</h1> {/* or Edit Post */}
+  <div className="create-post-container big">  
+    <h1 className="create-post-title">Create New Post</h1>
     {error && <p className="error-message">{error}</p>}
     <PostEditor
       form={form}
       onChange={handleChange}
       onSubmit={handleSubmit}
-      submitLabel="Update" // or "Update"
+      submitLabel="Update" 
       error={error}
     />
   </div>
